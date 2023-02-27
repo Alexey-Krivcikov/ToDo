@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>To do list</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">To do list</h1>
+  </header>
+  <main class="content">
+    <form class="toDoForm" action="#" name="toDoForm">
+      <input class="toDoForm__input" type="text" name="toDoInput" placeholder="Add to list">
+      <button class="toDoForm__submitBtn" name="toDoBtn" type="submit">Add</button>
+    </form>
+    <section class="toDoList">
+      <ul class="toDoList__container">
+
+      </ul>
+    </section>
+    <button class="toDoList__cleanBtn" type="button">clear all task's</button>
+  </main>
+  <footer class="footer">
+    <h2 class="footer__title">&#169; Alexey Krivchikov</h2>
+  </footer>
+
+  <template id="listItem">
+    <li class="toDoList__item"></li>
+  </template>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
